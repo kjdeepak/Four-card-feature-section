@@ -1,13 +1,25 @@
 @import './nomalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
+
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
 html {
     font-size: 62.5%;
 }
 body{
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
-    background-color:  hsl(0, 0%, 98%);
+    background-color:  var(--Very-Light-Gray);
 }
 .title-content-section{
     align-items: center;
@@ -20,20 +32,20 @@ body{
 }
 
 .super-title{
-    color: hsl(229, 6%, 66%);
+    color: var(--Grayish-Blue);
     font-weight: 200;
     margin-bottom: 0;
 }
 
 .title{
-    color: hsl(234, 12%, 34%);
+    color: var(--Very-Dark-Blue);
     font-weight: 600;
     margin-bottom: 0;
     margin-top: 0.40em;
 }
 
 .sub-title{
-    color: hsl(229, 6%, 66%);
+    color: var(--Grayish-Blue);
     font-weight: 400;
     line-height: 1.8rem;
 }
@@ -49,7 +61,7 @@ body{
     width: 33.33%;
 }
 .card{
-    border: 0.067em solid  hsl(0, 0%, 98%);
+    border: 0.067em solid  var(--Very-Light-Gray);
     border-top: 0.30em solid transparent;
     border-radius: 0.40em;
     padding-left: 2em;
@@ -57,16 +69,16 @@ body{
     width: 75%;
     margin-bottom: 3em;
     background-color: #ffffff;
-    box-shadow: 0px 5px 10px hsl(229, 6%, 66%);
+    box-shadow: 0px 5px 10px var(--Grayish-Blue);
 }
 
 .card__title-text{
-    color: hsl(234, 12%, 34%);
+    color: var(--Very-Dark-Blue);
     font-weight: 600;
 }
 
 .card__body-text{
-    color: hsl(229, 6%, 66%);
+    color: var(--Grayish-Blue);
     font-weight: 400;
     margin-bottom: 3em;
 }
@@ -76,34 +88,26 @@ body{
     margin-bottom: 2em;
 }
 .card--supervisor{
-    border-top-color: hsl(180, 62%, 55%);
+    border-top-color: var(--Cyan);
 }
 .card--team-builder{
-    border-top-color:  hsl(0, 78%, 62%);
+    border-top-color:  var(--Red);
 }
 
 .card--karma{
-    border-top-color: hsl(34, 97%, 64%);
+    border-top-color: var(--Orange);
 }
 .card--calculator{
-    border-top-color: hsl(212, 86%, 64%);
+    border-top-color: var(--Blue);
 }
 
 
 @media(max-width: 1024px){
     .title-content-section{
-        display: flex;
-        flex-direction: column;
         justify-content: space-around;
-        margin-bottom: 3em;
-        margin-top: 3em;
-        text-align: center;
     }
     .card-section{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
     }
     .card-block{
         width: 100%;
