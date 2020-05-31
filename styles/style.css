@@ -1,0 +1,114 @@
+@import './nomalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color:  hsl(0, 0%, 98%);
+}
+.title-content-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.super-title{
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.title{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0.40em;
+}
+
+.sub-title{
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+.card-section{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.card-block{
+    width: 33.33%;
+}
+.card{
+    border: 0.067em solid  hsl(0, 0%, 98%);
+    border-top: 0.30em solid transparent;
+    border-radius: 0.40em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 75%;
+    margin-bottom: 3em;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px hsl(229, 6%, 66%);
+}
+
+.card__title-text{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.card__body-text{
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    margin-bottom: 3em;
+}
+
+.card__image{
+    text-align: right;
+    margin-bottom: 2em;
+}
+.card--supervisor{
+    border-top-color: hsl(180, 62%, 55%);
+}
+.card--team-builder{
+    border-top-color:  hsl(0, 78%, 62%);
+}
+
+.card--karma{
+    border-top-color: hsl(34, 97%, 64%);
+}
+.card--calculator{
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+
+@media(max-width: 1024px){
+    .title-content-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 3em;
+        margin-top: 3em;
+        text-align: center;
+    }
+    .card-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card-block{
+        width: 100%;
+    }
+    .card{
+        width: auto;
+    }
+}
